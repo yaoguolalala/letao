@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐淘云购—分类</title>
+    <link rel="stylesheet" href="asset/mui/css/mui.css">
+    <link rel="stylesheet" href="asset/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/category.css">
+    <script src="asset/mui/js/mui.js"></script>
+    <script src="asset/zepto/zepto.min.js"></script>
+    <script src="asset/artTemplate/template-native.js"></script>
+    <script src="js/category.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <h1 class="mui-title">乐淘云购</h1>
+    <a href="" class="mui-icon mui-icon-search mui-pull-right"></a>
+</header>
+
+<!--底部导航-->
+<nav class="mui-bar mui-bar-tab my-footer">
+    <a href="index.html" class="mui-tab-item ">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a href="category.html" class="mui-tab-item mui-active">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a href="index.html" class="mui-tab-item">
+        <span class="mui-icon fa fa-cart-plus"></span>
+        <span class="mui-tab-label">购物车</span>
+    </a>
+    <a href="index.html" class="mui-tab-item">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--中间内容区-->
+<div class="my-content">
+    <div class="category-left">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="links" id="links">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category-right">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="brand-list mui-clearfix">
+                    <li>
+                        <a href="">
+                            <img src="./images/brand1.png" alt="">
+                            <p>耐克</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/brand2.png" alt="">
+                            <p>阿迪达斯</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/brand3.png" alt="">
+                            <p>三叶草</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/brand4.png" alt="">
+                            <p>新百伦</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/brand5.png" alt="">
+                            <p>哥伦比亚</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/brand6.png" alt="">
+                            <p>匡威</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script id="category-first" type="text/template">
+        <% for(var i=0;i<result.length;i++){%>
+            <a href="#" ><%=result[i].categoryName %></a>
+        <%}%>
+    </script>
+</body>
+</html>
